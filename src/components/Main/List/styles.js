@@ -1,30 +1,17 @@
 import { makeStyles } from '@material-ui/core/styles';
+import { red, green } from '@material-ui/core/colors';
 
 export default makeStyles((theme) => ({
-  desktop: {
-    [theme.breakpoints.up('sm')]: {
-      display: 'none',
-    },
+  avatarIncome: {
+    color: '#fff',
+    backgroundColor: green[500],
   },
-  mobile: {
-    [theme.breakpoints.down('sm')]: {
-      display: 'none',
-    },
+  avatarExpense: {
+    color: theme.palette.getContrastText(red[500]),
+    backgroundColor: red[500],
   },
-  main: {
-    [theme.breakpoints.up('sm')]: {
-      paddingBottom: '5%',
-    },
-  },
-  last: {
-    [theme.breakpoints.down('sm')]: {
-      marginBottom: theme.spacing(3),
-      paddingBottom: '200px',
-    },
-  },
-  grid: {
-    '& > *': {
-      margin: theme.spacing(2),
-    },
+  list: {
+    maxHeight: '150px',
+    overflow: 'auto',
   },
 }));

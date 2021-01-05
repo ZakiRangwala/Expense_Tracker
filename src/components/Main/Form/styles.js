@@ -1,30 +1,24 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
-  desktop: {
-    [theme.breakpoints.up('sm')]: {
-      display: 'none',
-    },
+  media: {
+    height: 0,
+    paddingTop: '56.25%', // 16:9
   },
-  mobile: {
-    [theme.breakpoints.down('sm')]: {
-      display: 'none',
-    },
+  expand: {
+    transform: 'rotate(0deg)',
+    marginLeft: 'auto',
+    transition: theme.transitions.create('transform', {
+      duration: theme.transitions.duration.shortest,
+    }),
   },
-  main: {
-    [theme.breakpoints.up('sm')]: {
-      paddingBottom: '5%',
-    },
+  expandOpen: {
+    transform: 'rotate(180deg)',
   },
-  last: {
-    [theme.breakpoints.down('sm')]: {
-      marginBottom: theme.spacing(3),
-      paddingBottom: '200px',
-    },
+  cartContent: {
+    paddingTop: 0,
   },
-  grid: {
-    '& > *': {
-      margin: theme.spacing(2),
-    },
+  divider: {
+    margin: '20px 0',
   },
 }));
