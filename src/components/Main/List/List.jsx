@@ -20,8 +20,22 @@ const List = () => {
       type: "Income",
       category: "Salary",
       amount: 100,
-      date: new Date(),
+      date: "Tuesday January 5",
     },
+    {
+    id : 2,
+    type : "Expense",
+    category: "Leisure",
+    amount : 200,
+    date  : "Tuesday January 5",
+    },
+    {
+      id : 3,
+      type : "Expense",
+      category: "Pets",
+      amount : 500,
+      date  : "Tuesday January 5",
+      }
   ];
   return (
     <MUIList dense={false} className={classes.list}>
