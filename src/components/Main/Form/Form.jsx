@@ -9,7 +9,7 @@ import {
   Select,
   MenuItem,
 } from "@material-ui/core";
-import makeStyles from "./styles";
+import useStyles from "./styles";
 
 const Form = () => {
   const classes = useStyles();
@@ -40,7 +40,9 @@ const Form = () => {
       </Grid>
       <Grid item xs={6}>
         <TextField type="number" label="Amount" fullWidth />
-        <TextField type="date" label="Date" fullWidth />
+      </Grid>
+      <Grid item xs={6}>
+      <TextField type="date" label="Date" fullWidth />
       </Grid>
       <Button
         className={classes.button}

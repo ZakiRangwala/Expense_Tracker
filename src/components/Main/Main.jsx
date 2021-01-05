@@ -8,6 +8,7 @@ import {
   Divider,
 } from "@material-ui/core";
 import useStyles from "./styles";
+import Form from "./Form/Form"
 
 const Main = () => {
   const classes = useStyles();
@@ -24,6 +25,7 @@ const Main = () => {
           style={{ lineHeight: "1.5em", marginTop: "20px" }}
         ></Typography>
         <Divider />
+        <Form />
       </CardContent>
       <CardContent className={classes.CardContent}>
         <Grid container spacing={2}>
