@@ -80,7 +80,7 @@ const Form = () => {
       <Grid item xs={6}>
         <TextField
           type="date"
-          label="Date"
+          label=" "
           fullWidth
           value={formData.date}
           onChange={(e) => setFormData({ ...formData, date: e.target.value })}
