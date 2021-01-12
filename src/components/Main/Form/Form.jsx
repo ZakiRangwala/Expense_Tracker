@@ -72,7 +72,9 @@ const Form = () => {
             }
           >
             {selectedCategories.map((c) => (
-              <MenuItem key={c.type}>{c.type}</MenuItem>
+              <MenuItem key={c.type} value={c.type}>
+                {c.type}
+              </MenuItem>
             ))}
           </Select>
         </FormControl>
@@ -93,7 +95,7 @@ const Form = () => {
           fullWidth
           value={formData.date}
           onChange={(e) =>
-            setFormData({ ...formData, date: formatDate(e.target.value) })
+            setFormData({ ...formData, date: e.target.value})
           }
         />
       </Grid>
