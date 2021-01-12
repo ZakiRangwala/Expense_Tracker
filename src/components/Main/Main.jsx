@@ -10,6 +10,7 @@ import {
 import useStyles from "./styles";
 import Form from "./Form/Form";
 import List from "./List/List";
+import InfoCard from "./InfoCard"
 import { ExpenseTrackerContext } from "../../context/context";
 
 const Main = () => {
@@ -31,8 +32,7 @@ const Main = () => {
             textAlign: "center",
           }}
         >
-          Try saying add income/expense for "x" dollars in category "y" for date
-          "z"{" "}
+          <InfoCard />
         </Typography>
         <Divider />
         <Form />
