@@ -9,6 +9,7 @@ import {
   ErrorPanel,
 } from "@speechly/react-ui";
 import useStyles from "./styles";
+import "./App.css"
 
 const App = () => {
   const classes = useStyles();
@@ -25,6 +26,13 @@ const App = () => {
 
   return (
     <div className="App">
+      <div className="avatar">
+      <img onClick={() => window.open("https://zakirangwala.com")}
+        className="nav__avatar"
+        src="https://zakirangwala.com/assets/img/avatar.png"
+        alt="Netflix Avatar"
+      />
+      </div>
       <Grid
         className={classes.grid}
         container
